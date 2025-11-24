@@ -257,7 +257,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            Mouloudia Club Oranais - L'âme d'Oran
+            Mouloudia Club Oranais - L&apos;âme d&apos;Oran
           </TypographyP>
           <TypographyP className="font-mono ">
             Discover the official website of Mouloudia Club Oranais (MCO). 
