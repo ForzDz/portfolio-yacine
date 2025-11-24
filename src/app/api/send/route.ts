@@ -3,8 +3,6 @@ import { config } from "@/data/config";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const Email = z.object({
   fullName: z.string().min(2, "Full name is invalid!"),
   email: z.string().email({ message: "Email is invalid!" }),
@@ -12,6 +10,18 @@ const Email = z.object({
 });
 export async function POST(req: Request) {
   try {
+    // Check for API key first
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      return Response.json(
+        { error: "Missing API key for email service" },
+        { status: 500 }
+      );
+    }
+
+    // Create Resend instance inside the handler
+    const resend = new Resend(apiKey);
+
     const body = await req.json();
     console.log(body);
     const {
