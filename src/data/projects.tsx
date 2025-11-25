@@ -337,10 +337,11 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Portfolio",
     title: "My Portfolio",
-    src: "/assets/projects-screenshots/portfolio/landing.png",
+    src: "/assets/portfolio-principale.jpg",
     screenshots: ["1.png"],
-    live: "http://nareshkhatri.vercel.app",
+    live: "http://localhost:3000",
     github:"https://github.com/Naresh-Khatri/Portfolio",
+    directLink: true,
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
