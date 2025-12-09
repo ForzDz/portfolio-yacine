@@ -238,7 +238,7 @@ export type Project = {
 const projects: Project[] = [
   {
     id: "mouloudia",
-    category: "Football Club",
+    category: "site professionnel",
     title: "Mouloudia Club Oranais",
     src: "/assets/projects-screenshots/mouloudia/landing.jpg",
     screenshots: ["landing.jpg"],
@@ -335,11 +335,11 @@ const projects: Project[] = [
   },
   {
     id: "portfolio",
-    category: "Portfolio",
-    title: "My Portfolio",
-    src: "/assets/portfolio-principale.jpg",
-    screenshots: ["1.png"],
-    live: "http://localhost:3000",
+    category: "Site vitrine",
+    title: "My works",
+    src: "/assets/portfolio principale.jpg",
+    screenshots: ["portfolio principale.jpg"],
+    live: "https://restaurant-premium.netlify.app/",
     github:"https://github.com/Naresh-Khatri/Portfolio",
     directLink: true,
     skills: {
@@ -403,10 +403,10 @@ const projects: Project[] = [
   {
     id: "yacine-cosmetique",
     category: "E-commerce",
-    title: "Yacine Cosmétique",
-    src: "/assets/projects-screenshots/yacine-cosmetique/landing.jpg",
-    screenshots: ["landing.jpg"],
-    live: "https://yacine-cosmtique.netlify.app/",
+    title: "My store",
+    src: "/assets/e commerce simple.JPG",
+    screenshots: ["e commerce simple.JPG"],
+    live: "https://patch-face.netlify.app/",
     directLink: true,
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind],
@@ -422,7 +422,7 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/yacine-cosmetique/landing.jpg`,
+              `/assets/e commerce simple.JPG`,
             ]}
           />
         </div>
@@ -431,7 +431,7 @@ const projects: Project[] = [
   },
   {
     id: "project-yacine",
-    category: "Web App",
+    category: "Portfolio",
     title: "Project Yacine",
     src: "/assets/projects-screenshots/blog/landing.jpg",
     screenshots: ["landing.jpg"],
